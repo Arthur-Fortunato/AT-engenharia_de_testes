@@ -1,0 +1,13 @@
+Testes da função: classificarIMC(double imc):
+A função retorna as classificações esperadas para todos os valores testados. Apesar dos testes passarem,
+o uso desnecessário do "||" faz o código perder qualidade, o código funciona normalmente, mas é dispensável
+
+Testes da função: calcularPeso(double peso, double altura)
+Criei testes para entradas válidas e inválidas, esse teste me mostrou que nenhuma entrada inválida é tratada, não há nenhum
+tratamento de exceções ou até mesmo prints invalidando a entrada dos dados incorretos
+
+Não criei testes para a função: programaIMC(String versao)
+Mas fazendo testes manuais percebe-se que:
+o código não trata erros de entrada, o usuário pode colocar uma letra durante a execução do programa e vai explodir um
+erro em cima dele, não tem verificação de peso e de altura, ou seja, valores inválidos são permitidos e tidos como válidos.
+Tem que refatorar esse código
