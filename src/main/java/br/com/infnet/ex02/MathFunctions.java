@@ -1,15 +1,19 @@
 package br.com.infnet.ex02;
 
-import java.util.stream.IntStream;
+import br.com.infnet.MathLogger;
 
-public class MathFunctions
-{
-    public static int MultiplyByTwo(int number)
-    {
+public class MathFunctions {
+    private final MathLogger logger;
+
+    public MathFunctions(MathLogger logger) {
+        this.logger = logger;
+    }
+
+    public static int MultiplyByTwo(int number) {
         return number * 2;
     }
-    public static int[] GenerateMultiplicationTable(int number, int limit)
-    {
+
+    public static int[] GenerateMultiplicationTable(int number, int limit) {
         int[] result = new int[limit];
         for (int i = 0; i < limit; i++)
         {
@@ -17,8 +21,8 @@ public class MathFunctions
         }
         return result;
     }
-    public static boolean IsPrime(int number)
-    {
+
+    public static boolean IsPrime(int number) {
         if (number <= 1) return false;
         for (int i = 2; i <= Math.sqrt(number); i++)
         {
@@ -26,14 +30,15 @@ public class MathFunctions
         }
         return true;
     }
+
     public static double CalculateAverage(int[] numbers) {
         if (numbers == null || numbers.length == 0)
             throw new IllegalArgumentException("Array cannot be null or empty.");
 
-        int sum = 0;
-        for (int n : numbers) sum += n;
+        int soma = 0;
+        for (int n : numbers) soma += n;
 
-        return (double) sum / numbers.length;
+        return (double) soma / numbers.length;
     }
 
 }

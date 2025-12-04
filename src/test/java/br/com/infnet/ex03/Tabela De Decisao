@@ -1,0 +1,13 @@
+Tabela de decisão para UF + cidade + logradouro
+
+Regra 1:
+UF existente + Cidade existente + logradouro existente -> retorna lista com resultados
+
+Regra 2:
+UF existente + Cidade existente + logradouro existente com acento -> retorna lista com resultados
+
+Regra 3:
+UF inexistente + Cidade existente + logradouro inexistente -> retorna []
+
+Regra 4:
+UF existente + Cidade inexistente + logradouro existente -> retorna []
