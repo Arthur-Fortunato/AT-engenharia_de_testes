@@ -1,0 +1,6 @@
+Podia ter adicionado um teste para o caso GCD.gcd(0,0), já que o ele "foge" das regras normais de matemática, mesmo que
+seja permitida pela implementação.
+
+Adicionar testes de desempenho para entradas muito grandes.
+
+O método atual não trata "Null", podia validar valores nulos também.
